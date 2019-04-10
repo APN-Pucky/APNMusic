@@ -19,4 +19,5 @@ mkfifo mp_fifo
 ```
 node app.js
 ```
+Opens A web interface on http://localhost:3070 .
 ![IMG](/img/img.png)
