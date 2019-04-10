@@ -1,7 +1,7 @@
 # APNMusic
 
 ## Requirements
-Mplayer, NodeJS, FFMPEG, Youtube-dl
+Linux: Mplayer, NodeJS, FFMPEG, Youtube-dl
 
 e.g. on debian
 
