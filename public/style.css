@@ -1,0 +1,235 @@
+html, body ,div{
+	height: 100%;
+	width: 100%;
+	background: red;
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	box-sizing: border-box;
+}
+
+#apnmusic {
+	color: #000000;
+	font-size: 17px;
+}
+
+#playlist {
+	color: #000000;
+	font-size: 16px;
+}
+
+p {
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+}
+
+.divs {
+	border:1px solid black;
+}
+
+#div1 {
+	width:60%;
+	float:left;
+} 
+#div11 {
+	height:100%;
+	border:0px solid black;
+}
+
+#div2 {
+	width:40%;
+	float:right;
+}
+#div21  {
+	height:70%;
+}
+#div22 {
+	height:30%;
+}
+
+#search {
+	height: 10%;
+	display: inline-block;
+	white-space: nowrap;
+}
+
+#search_input {
+	width:70%;
+}
+
+#search_button {
+	width:25%;
+}
+
+#search_img {
+	height:10px;
+}
+
+#results {
+	overflow-y:scroll;
+	height:75%;
+}
+
+.result_div {
+	height:auto;
+	display: inline-block;
+	white-space: nowrap;
+	background: #ff1a1a;
+}
+
+.result_title {
+	width:80%
+}
+
+.result_img {
+	height:50px;
+	float:left;
+}
+
+.file_div {
+	height:auto;
+	display: inline-block;
+	white-space: nowrap;
+	background: #cc0000;
+}
+
+.file_title {
+	width:80%;
+	font-size:80%;
+}
+
+.file_img {
+	height:50px;
+	float:left;
+}
+
+.file_info {
+	width:70%;
+	color: grey;
+	font-size:75%;
+}
+
+.delete_button {
+	height:50%;
+	font-size:70%
+}
+.appendplay_button {
+	height:50%;
+	font-size:70%
+}
+
+#control_button_div {
+	height:40%;
+	white-space: nowrap;
+}
+
+.control_button {
+	height:80%;
+	width:20%;
+}
+
+#bskip_button {
+}
+
+#pause_button {
+}
+
+#fskip_button {
+}
+
+.control_img {
+	height:100%;
+	width:100%;
+}
+
+#bskip_img {
+}
+
+#pause_img {
+}
+
+#fskip_img {
+}
+
+#vol_slider {
+	width:20%;
+}
+
+#time_div {
+	height:20%;
+}
+
+#time_slider {
+	width:60%;
+	float:left;
+	white-space: nowrap;
+}
+
+.time_number {
+	width:15%;
+	float:left;
+	text-align: center
+}
+
+#current {
+	height:30%
+}
+
+#play {
+	height:auto;
+	display: inline-block;
+}
+
+#play_img {
+	height:60px;
+}
+
+#play_img_div {
+	float:left;
+	width:auto;
+	height:100%;
+}
+
+#play_title {
+	width:100%;
+}
+
+#list_button_div {
+	height:10%;
+	white-space: nowrap;
+}
+
+.list_button {
+	height:80%;
+	width:20%;
+}
+
+#list_div {
+	overflow-y:scroll;
+	height:74%;
+	border: 1px solid #808080;
+}
+
+.list_item_div {
+	height:auto;
+	display: inline-block;
+	white-space: nowrap;
+	background: #cf0000;
+}
+
+.list_title {
+	width:80%;
+}
+
+.list_img {
+	height:50px;
+	float:left;
+}
+
+
+.remove_button {
+	height:50%;
+	font-size:70%
+}

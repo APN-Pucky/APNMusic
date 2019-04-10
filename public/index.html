@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>APNMusic</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="/js/vendor/jquery/jquery.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/main.js"></script>
+</head>
+
+<body>
+	<div id="div1">
+			<h1 id="apnmusic">APNMusic</h1>
+		<div id="div11" class="divs">
+			<div id="search">
+			<input type="text" id="search_input" placeholder="Search" autofocus="" value="" onkeydown="if (event.keyCode == 13) document.getElementById('search_button').click()"></input>
+			<button type="button" id="search_button">
+				<img id="search_img" src="img/search.png"></img> 
+			</button>
+			</div>
+			<div id="results">
+			</div>
+		</div>
+		
+	</div>
+	<div id="div2" >
+		<div id="div21" class="divs">
+			<h1 id="playlist">Playlist</h1>
+			<div id="list_button_div">
+			<button type="button" class="list_button" id="clear_button">
+				<p>Clear</p>
+			</button>
+			<button type="button" class="list_button" id="shuffle_button">
+				<p>Shuffle</p>
+			</button>
+			<button type="button" class="list_button" id="random_button">
+				<p>Random</p>
+			</button>
+			</div>
+			<div id="list_div">
+			</div>
+		</div>
+		<div id="div22" class="divs">
+			<div id="current">
+			</div>
+			<div id="control_button_div">
+			<button type="button" class="control_button" id="bskip_button">
+				<img id="bskip_img" class="control_img" src="img/bskip.png"></img>
+			</button>
+			<button type="button" class="control_button" id="pause_button">
+				<img id="pause_img" class="control_img" src="img/pause.png"></img>
+			</button>
+			<button type="button" class="control_button" id="fskip_button">
+				<img id="bskip_img" class="control_img" src="img/fskip.png"></img>
+			</button>
+			<input type="range" id="vol_slider" min="0" max="100" value="100" step="1"></input>
+			</div>
+			<div id="time_div">
+				<p id="time_number_current" class="time_number">00:00</p><input type="range" id="time_slider" min="0" max="100" value="0" step="1"></input><p id="time_number_max" class="time_number">99:99</p>
+			</div>
+		</div>
+	</div>
+  
+</body>
+</html>

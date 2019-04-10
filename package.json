@@ -1,0 +1,20 @@
+{
+  "name" : "APNMusic",
+  "description" : "APNMusic",
+  "homepage" : "https://github.com/APN-Pucky/APNMusic",
+  "keywords" : [],
+  "author" : "APNPucky <APN-Pucky@users.noreply.github.com>",
+  "contributors" :[
+	{
+		"name": "",
+		"email": ""
+	}],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:APN-Pucky/APNMusic.git"
+  },
+  "dependencies" : ["socket.io","express"],
+  "main" : "app.js",
+  "version" : "0.0.1",
+  "license" : "GPLv2"
+}
