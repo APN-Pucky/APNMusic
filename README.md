@@ -13,6 +13,8 @@ sudo pip install youtube-dl
 ```
 npm install
 mkfifo mp_fifo
+mkdir public/img/audio
+mkdir music/audio
 ```
 
 ## Run it

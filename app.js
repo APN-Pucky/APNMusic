@@ -149,15 +149,17 @@ function sendCurrentAudios() {
 }
 
 
-var str1 = '<button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button addto-queue-button video-actions spf-nolink hide-until-delayloaded addto-tv-queue-button yt-uix-tooltip" type="button" onclick=";return false;"'
+var str1 = '<button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" title="'
 var str2 = '<a href="/watch?v=';
 var str3 = '<img src="//';
-var str4 = '</a><span class=';
+//var str4 = '</a><span class=';
+var str4 = 'title="'
 var str5 = '</span';
 
 function getVidIDs(search){
   request("https://www.youtube.com/results?search_query="+search, function(error, response, body) {
     var res = body.split(str1);
+    console.log(body);
     ids = new Array(0);
     titles = new Array(0);
     for(var i = 1; i < res.length;i++)
@@ -165,11 +167,13 @@ function getVidIDs(search){
   	var prelink = res[i].split(str2)[1];
   	var id = prelink.split('"')[0];
 	if(id.indexOf("&") > -1)continue;
+	console.log("ID: "+ id);
 	ids[ids.length] = id;
-	//console.log(res[i].split(str4)[0]);
-	var pretitle = res[i].split(str4)[0];
-	var atitle = pretitle.split('>');
-	var title = atitle[atitle.length-2];
+	var pretitle = res[i].split(str4)[1];
+  	 var title = pretitle.split('"')[0];
+	//var atitle = pretitle.split('>');
+	//var title = atitle[atitle.length-2];
+	console.log("TITLE: "+ title);
 	titles[titles.length] = title.replace("</span","").replace(/(&quot;)|([^a-zA-ZäöüÖÄÜ0-9_\-])/g," ");
 	//var link =  "www.youtube.com/watch?v=" + id;
   	//console.log(link);
