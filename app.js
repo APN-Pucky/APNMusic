@@ -159,7 +159,8 @@ var str5 = '</span';
 function getVidIDs(search){
   request("https://www.youtube.com/results?search_query="+search, function(error, response, body) {
     var res = body.split(str1);
-    console.log(body);
+    var debug = false;
+    if(debug)console.log(body);
     ids = new Array(0);
     titles = new Array(0);
     for(var i = 1; i < res.length;i++)
@@ -167,13 +168,13 @@ function getVidIDs(search){
   	var prelink = res[i].split(str2)[1];
   	var id = prelink.split('"')[0];
 	if(id.indexOf("&") > -1)continue;
-	console.log("ID: "+ id);
+	if(debug)console.log("ID: "+ id);
 	ids[ids.length] = id;
 	var pretitle = res[i].split(str4)[1];
   	 var title = pretitle.split('"')[0];
 	//var atitle = pretitle.split('>');
 	//var title = atitle[atitle.length-2];
-	console.log("TITLE: "+ title);
+	if(debug)console.log("TITLE: "+ title);
 	titles[titles.length] = title.replace("</span","").replace(/(&quot;)|([^a-zA-ZäöüÖÄÜ0-9_\-])/g," ");
 	//var link =  "www.youtube.com/watch?v=" + id;
   	//console.log(link);
